@@ -1,0 +1,10 @@
+let MISPFeed = externaldata(DestIP: string)[@"https://raw.githubusercontent.com/stamparm/ipsum/master/levels/4.txt"] with (format="txt", ignoreFirstRecord=True);
+let IPRegex = '[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}';
+let MaliciousIP = materialize (
+       MISPFeed 
+       | where DestIP matches regex IPRegex
+       | distinct DestIP
+        );
+DeviceNetworkEvents
+| where RemoteIP in (MaliciousIP)
+| project-reorder Timestamp, DeviceName, RemoteIP, RemotePort, InitiatingProcessAccountName
