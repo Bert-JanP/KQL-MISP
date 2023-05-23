@@ -7,7 +7,7 @@ The architecture used is shown below, where this repository provides the pulling
 
 ![Overview KQL MISP](Images/KQL%20MISP.png "Overview KQL MISP")
 
-Before you start implementing this solution think about your needs and the value that you want to get out of MISP. This solution offers a limited implementation in comparison to other MISP implementations (see section [Other implementations](#Other-implementations)). If you want to implement a subset of the MISP feeds, only query on specific tables or have some fun with queries than this is the solution for you!
+Before you start implementing this solution think about your needs and the value that you want to get out of MISP. This solution offers a limited implementation in comparison to other MISP implementations (see [Other implementations](#Other-implementations)). If you want to implement a subset of the MISP feeds, only query on specific tables or have some fun with queries than this is the solution for you!
 
 ## NOTE!! This repo is still under development!!
 
@@ -32,13 +32,6 @@ Sentinel and Defender For Endpoint use different tables. In Defender For Endpoin
 - DeviceNetworkEvents
 - DeviceFileEvents
 
-# To do
-The following items are at least on the to do list, since this project is still under development. 
-
-- Add all feeds MDE
-- Add all feeds Sentinel
-- Query pack sentinel
-
 ## Contributions
 
 Contributions to this repository are appreciated! If you have a query which already uses a MISP feed which has not been implemented yet, then feel free to add it to the right folder. If you identify any errors in the queries please reach out, in order for them to be fixed. 
@@ -51,3 +44,10 @@ There are other MISP implementations available for Sentinel, however, in those c
 - https://www.inspark.nl/misp-threat-intelligence-azure-sentinel/
 - https://www.linkedin.com/pulse/how-ingest-misp-iocs-azure-sentinel-using-security-arshad/
 - https://github.com/zolderio/misp-to-sentinel
+
+# To do
+The following items are at least on the to do list, since this project is still under development. 
+
+- Add all feeds MDE -> In progress
+- Add all feeds Sentinel
+- Query pack sentinel
