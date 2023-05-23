@@ -7,7 +7,7 @@ The architecture used is shown below, where this repository provides the pulling
 
 ![Overview KQL MISP](Images/KQL%20MISP.png "Overview KQL MISP")
 
-Before you start implementing this solution think about your needs and the value that you want to get out of MISP. This solution offers a limited implementation in comparison to other MISP implementations (see section [Other implementations](#Other-implementations). If you want to implement a subset of the MISP feeds, only query on specific tables or have some fun with queries than this is the solution for you!
+Before you start implementing this solution think about your needs and the value that you want to get out of MISP. This solution offers a limited implementation in comparison to other MISP implementations (see section [Other implementations](#Other-implementations)). If you want to implement a subset of the MISP feeds, only query on specific tables or have some fun with queries than this is the solution for you!
 
 ## NOTE!! This repo is still under development!!
 
