@@ -12,14 +12,9 @@
 | [DNS CH TXT version.bind](https://dataplane.org/dnsversion.txt) | dataplane.org | csv | |||
 | [DNS recursion desired IN ANY](https://dataplane.org/dnsrdany.txt) | dataplane.org | csv | |||
 | [DNS recursion desired](https://dataplane.org/dnsrd.txt) | dataplane.org | csv | |||
-| [Domains from High-Confidence DGA-based C&amp;C Domains Actively Resolving](https://osint.bambenekconsulting.com/feeds/c2-dommasterlist-high.txt) | osint.bambenekconsulting.com | csv | |||
 | [Feodo IP Blocklist](https://feodotracker.abuse.ch/downloads/ipblocklist.csv) | abuse.ch | csv | | :heavy_check_mark: ||
 | [firehol_level1](https://raw.githubusercontent.com/ktsaou/blocklist-ipsets/master/firehol_level1.netset) | iplists.firehol.org | freetext | |||
-| [http://cybercrime-tracker.net gatelist](https://cybercrime-tracker.net/ccamgate.php) | http://cybercrime-tracker.net | freetext| |||
-| [http://cybercrime-tracker.net hashlist](https://cybercrime-tracker.net/ccamlist.php) | [http://cybercrime-tracker.net](http://cybercrime-tracker.net) | freetext | |||
 | [IP protocol 41](https://dataplane.org/proto41.txt) | dataplane.org | csv | |||
-| [ip-block-list - snort.org](https://snort.org/downloads/ip-block-list) | [https://snort.org](https://snort.org) | freetext | |||
-| [IPs from High-Confidence DGA-Based C&amp;Cs Actively Resolving - requires a valid license](https://osint.bambenekconsulting.com/feeds/c2-ipmasterlist-high.txt) | osint.bambenekconsulting.com | csv | |||
 | [ipspamlist](http://www.ipspamlist.com/public_feeds.csv) | ipspamlist | csv | |||
 | [IPsum (aggregation of all feeds) - level 1 - lot of false positives](https://raw.githubusercontent.com/stamparm/ipsum/master/levels/1.txt) | IPsum | freetext | | :heavy_check_mark: ||
 | [IPsum (aggregation of all feeds) - level 2 - medium false positives](https://raw.githubusercontent.com/stamparm/ipsum/master/levels/2.txt) | IPsum | freetext | | :heavy_check_mark: ||
@@ -36,9 +31,7 @@
 | [Malware Bazaar](https://bazaar.abuse.ch/export/txt/md5/recent/) | abuse.ch | csv | | :heavy_check_mark: ||
 | [MalwareBazaar](https://bazaar.abuse.ch/downloads/misp/) | abuse.ch | misp | |||
 | [Metasploit exploits with CVE assigned](https://feeds.ecrimelabs.net/data/metasploit-cve) | eCrimeLabs | csv | | :heavy_check_mark: ||
-| [mirai.security.gives](https://mirai.security.gives/data/ip_list.txt) | security.gives | freetext | |||
 | [OpenPhish url list](https://openphish.com/feed.txt) | openphish.com | freetext | |||
-| [Panels Tracker](https://benkow.cc/export.php) | Benkow.cc | csv | |||
 | [PhishScore](https://phishstats.info/phish_score.csv) | PhishStats | csv | |||
 | [Phishtank online valid phishing](https://data.phishtank.com/data/online-valid.csv) |  Phishtank | csv | |||
 | [pop3gropers](https://home.nuug.no/~peter/pop3gropers.txt) | home.nuug.no | csv | |||
@@ -52,9 +45,6 @@
 | [Telnet Bruteforce IPs](https://feeds.honeynet.asia/bruteforce/latest-telnetbruteforce-unique.csv) | APNIC Community Honeynet Project | csv | |||
 | [TELNET login](https://dataplane.org/telnetlogin.txt) | dataplane.org | csv | |||
 | [The Botvrij.eu Data](https://www.botvrij.eu/data/feed-osint) | Botvrij.eu | misp | |||
-| [This list contains all browser mining domains - A list to prevent browser mining only](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt?inline=false) | ZeroDot1 - CoinBlockerLists | freetext | |||
-| [This list contains all domains - A list for administrators to prevent mining in networks](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt?inline=false) | ZeroDot1 - CoinBlockerLists | freetext | |||
-| [This list contains all optional domains - An additional list for administrators](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt?inline=false) | ZeroDot1 - CoinBlockerLists | freetext | |||
 | [threatfox indicators of compromise](https://threatfox.abuse.ch/export/csv/recent/) | abuse.ch | csv | |||
 | [Threatfox](https://threatfox.abuse.ch/downloads/misp/) | abuse.ch | misp | |||
 | [Tor ALL nodes](https://www.dan.me.uk/torlist/) | TOR Node List from dan.me.uk | csv | |||
@@ -62,9 +52,8 @@
 | [URLHaus Malware URLs](https://urlhaus.abuse.ch/downloads/csv_recent/) | abuse.ch | csv | |||
 | [URLhaus](https://urlhaus.abuse.ch/downloads/misp/) | abuse.ch | misp | |||
 | [VNC RFB](https://dataplane.org/vncrfb.txt) | dataplane.org | csv | |||
-| [VXvault - URL List](http://vxvault.net/URL_List.php) | VXvault | freetext | |||
 
-## Removed Feeds:
+# Unsupported Feeds:
 
 Some feeds that are mentioned on [MISPs Feed page](https://www.misp-project.org/feeds/) cannot be implemented in KQL, this is due to various reasons mentioned below. 
 
@@ -74,7 +63,18 @@ Some feeds that are mentioned on [MISPs Feed page](https://www.misp-project.org/
 | [All current domains belonging to known malicious DGAs](https://osint.bambenekconsulting.com/feeds/dga-feed-high.csv) | osint.bambenekconsulting.com | Commercial licence requried for the feed |
 | [blocklist.greensnow.co](https://blocklist.greensnow.co/greensnow.txt) | greensnow.co |Externaldata(), does not support this datatype.|
 | [cybercrime-tracker.net - all](https://cybercrime-tracker.net/all.php) | cybercrime-tracker.net | Externaldata(), does not support this datatype.|
-| [Tor exit nodes](https://www.dan.me.uk/torlist/?exit) | dan.me.uk | Data is shared in the ALL Nodes feed, otherwise double data is used |
 | [CyberCure - Blocked URL Feed](https://api.cybercure.ai/feed/get_url?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
 | [CyberCure - Hash Feed](https://api.cybercure.ai/feed/get_hash?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
 | [CyberCure - IP Feed](https://api.cybercure.ai/feed/get_ips?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
+| [Domains from High-Confidence DGA-based C&amp;C Domains Actively Resolving](https://osint.bambenekconsulting.com/feeds/c2-dommasterlist-high.txt) | osint.bambenekconsulting.com | Commercial licence requried for the feed |
+| [http://cybercrime-tracker.net gatelist](https://cybercrime-tracker.net/ccamgate.php) | http://cybercrime-tracker.net | Externaldata(), does not support this datatype.|
+| [http://cybercrime-tracker.net hashlist](https://cybercrime-tracker.net/ccamlist.php) | [http://cybercrime-tracker.net](http://cybercrime-tracker.net) | Externaldata(), does not support this datatype.|
+| [ip-block-list - snort.org](https://snort.org/downloads/ip-block-list) | [https://snort.org](https://snort.org) | Access to persistent storage path 'https://snort.org/downloads/ip-block-list' was denied |
+| [IPs from High-Confidence DGA-Based C&amp;Cs Actively Resolving - requires a valid license](https://osint.bambenekconsulting.com/feeds/c2-ipmasterlist-high.txt) | osint.bambenekconsulting.com | Commercial licence requried for the feed |
+| [mirai.security.gives](https://mirai.security.gives/data/ip_list.txt) | security.gives | Externaldata() timeout. |
+| [Panels Tracker](https://benkow.cc/export.php) | Benkow.cc | Externaldata(), does not support this datatype.|
+| [This list contains all browser mining domains - A list to prevent browser mining only](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt?inline=false) | ZeroDot1 - CoinBlockerLists | Read from IStreamSource failed |
+| [This list contains all domains - A list for administrators to prevent mining in networks](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt?inline=false) | ZeroDot1 - CoinBlockerLists | Read from IStreamSource failed |
+| [This list contains all optional domains - An additional list for administrators](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt?inline=false) | ZeroDot1 - CoinBlockerLists | Read from IStreamSource failed |
+| [Tor exit nodes](https://www.dan.me.uk/torlist/?exit) | dan.me.uk | Data is shared in the ALL Nodes feed, otherwise double data is used |
+| [VXvault - URL List](http://vxvault.net/URL_List.php) | VXvault | Externaldata(), does not support this datatype.|
