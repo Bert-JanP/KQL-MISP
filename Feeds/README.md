@@ -3,17 +3,10 @@
 | Feed Name | Provider | Feed Format | Sentinel | Defender For Endpoint | Notes
 | --- | --- | --- | --- | --- | --- |
 | [abuse.ch SSL IPBL](https://sslbl.abuse.ch/blacklist/sslblacklist.csv) | abuse.ch | csv | |||
-| [alienvault reputation generic](https://reputation.alienvault.com/reputation.generic) | .alienvault.com | csv | |||
-| [All current domains belonging to known malicious DGAs](https://osint.bambenekconsulting.com/feeds/dga-feed-high.csv) | osint.bambenekconsulting.com | csv | |||
 | [blocklist.de/lists/all.txt](https://lists.blocklist.de/lists/all.txt) | blocklist.de |  freetext | | :heavy_check_mark: ||
-| [blocklist.greensnow.co](https://blocklist.greensnow.co/greensnow.txt) | greensnow.co | csv | |||
 | [blockrules of rules.emergingthreats.net](https://rules.emergingthreats.net/blockrules/compromised-ips.txt) | rules.emergingthreats.net | csv | | :heavy_check_mark: ||
 | [ci-badguys.txt](https://cinsscore.com/list/ci-badguys.txt) | cinsscore.com | freetext | | :heavy_check_mark: ||
 | [CIRCL OSINT Feed](https://www.circl.lu/doc/misp/feed-osint) | CIRCL | misp | |||
-| [cybercrime-tracker.net - all](https://cybercrime-tracker.net/all.php) | cybercrime-tracker.net | freetext | |||
-| [CyberCure - Blocked URL Feed](https://api.cybercure.ai/feed/get_url?type=csv) | www.cybercure.ai | csv | |||
-| [CyberCure - Hash Feed](https://api.cybercure.ai/feed/get_hash?type=csv) | www.cybercure.ai | csv | |||
-| [CyberCure - IP Feed](https://api.cybercure.ai/feed/get_ips?type=csv) | www.cybercure.ai | csv | |||
 | [diamondfox_panels](https://raw.githubusercontent.com/pan-unit42/iocs/master/diamondfox/diamondfox_panels.txt) | pan-unit42 | freetext | | :heavy_check_mark: ||
 | [DigitalSide Threat-Intel OSINT Feed](https://osint.digitalside.it/Threat-Intel/digitalside-misp-feed/) | osint.digitalside.it | misp | |||
 | [DNS CH TXT version.bind](https://dataplane.org/dnsversion.txt) | dataplane.org | csv | |||
@@ -73,4 +66,15 @@
 
 ## Removed Feeds:
 
-https://www.dan.me.uk/torlist/?exit"
+Some feeds that are mentioned on [MISPs Feed page](https://www.misp-project.org/feeds/) cannot be implemented in KQL, this is due to various reasons mentioned below. 
+
+| Feed Name | Provider | Reason
+| --- | --- | --- |
+| [alienvault reputation generic](https://reputation.alienvault.com/reputation.generic) | .alienvault.com | Externaldata(), does not support this datatype.|
+| [All current domains belonging to known malicious DGAs](https://osint.bambenekconsulting.com/feeds/dga-feed-high.csv) | osint.bambenekconsulting.com | Commercial licence requried for the feed |
+| [blocklist.greensnow.co](https://blocklist.greensnow.co/greensnow.txt) | greensnow.co |Externaldata(), does not support this datatype.|
+| [cybercrime-tracker.net - all](https://cybercrime-tracker.net/all.php) | cybercrime-tracker.net | Externaldata(), does not support this datatype.|
+| [Tor exit nodes](https://www.dan.me.uk/torlist/?exit) | dan.me.uk | Data is shared in the ALL Nodes feed, otherwise double data is used |
+| [CyberCure - Blocked URL Feed](https://api.cybercure.ai/feed/get_url?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
+| [CyberCure - Hash Feed](https://api.cybercure.ai/feed/get_hash?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
+| [CyberCure - IP Feed](https://api.cybercure.ai/feed/get_ips?type=csv) | www.cybercure.ai | The remote server returned an error: (405) Method Not Allowed. |
