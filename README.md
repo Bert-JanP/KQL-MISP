@@ -48,6 +48,6 @@ There are other MISP implementations available for Sentinel, however, in those c
 # To do
 The following items are at least on the to do list, since this project is still under development. 
 
-- Add all feeds MDE -> In progress
+- Add all feeds MDE -> [In progress](Feeds/README.md)
 - Add all feeds Sentinel
 - Query pack sentinel
