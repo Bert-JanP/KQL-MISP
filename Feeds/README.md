@@ -31,7 +31,6 @@
 | [Malware Bazaar](https://bazaar.abuse.ch/export/txt/md5/recent/) | abuse.ch | csv | | :heavy_check_mark: ||
 | [MalwareBazaar](https://bazaar.abuse.ch/downloads/misp/) | abuse.ch | misp | |||
 | [Metasploit exploits with CVE assigned](https://feeds.ecrimelabs.net/data/metasploit-cve) | eCrimeLabs | csv | | :heavy_check_mark: ||
-| [OpenPhish url list](https://openphish.com/feed.txt) | openphish.com | freetext | |||
 | [PhishScore](https://phishstats.info/phish_score.csv) | PhishStats | csv | |||
 | [Phishtank online valid phishing](https://data.phishtank.com/data/online-valid.csv) |  Phishtank | csv | |||
 | [pop3gropers](https://home.nuug.no/~peter/pop3gropers.txt) | home.nuug.no | csv | |||
@@ -78,3 +77,4 @@ Some feeds that are mentioned on [MISPs Feed page](https://www.misp-project.org/
 | [This list contains all optional domains - An additional list for administrators](https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt?inline=false) | ZeroDot1 - CoinBlockerLists | Read from IStreamSource failed |
 | [Tor exit nodes](https://www.dan.me.uk/torlist/?exit) | dan.me.uk | Data is shared in the ALL Nodes feed, otherwise double data is used |
 | [VXvault - URL List](http://vxvault.net/URL_List.php) | VXvault | Externaldata(), does not support this datatype.|
+| [OpenPhish url list](https://openphish.com/feed.txt) | openphish.com | Partial query failure: Unable to perform requested operation. (message: 'Error with persistent storage path 'https://openphish.com/feed.txt' (operation 'CreateFileRef'). | 
